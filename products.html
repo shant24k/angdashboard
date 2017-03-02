@@ -1,0 +1,28 @@
+
+<!--<div>
+<ul>
+<li><a href="/"></a></li><li><a href="/"></a></li><li><a href="/"></a></li>
+</ul>
+</div>-->
+<div>
+<table>
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Type</th>
+            <th>Product Name</th>
+            <th>Brand</th>
+            <th>Price in INR</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="product in summary.products">
+            <td>{{ product.productId }}</td>
+            <td>{{ product.productType }}</td>
+            <td>{{ product.productName }}</td>
+            <td>{{ product.brand }}</td>
+            <td>{{ product.price }}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
