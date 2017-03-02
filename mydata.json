@@ -49,28 +49,28 @@
 		"price": "55000"
 	}],
 	"categoryDetails": [{
-		"categoryId": "M000",
+		"categoryId": "MOB000",
 		"categoryName": "OnePlus 3"
 	}, {
-		"categoryId": "M001",
+		"categoryId": "MOB001",
 		"categoryName": "iPhone 7"
 	}, {
-		"categoryId": "M002",
+		"categoryId": "MOB002",
 		"categoryName": "iPhone 7+"
 	}, {
-		"categoryId": "M003",
+		"categoryId": "MOB003",
 		"categoryName": "Pixel"
 	}, {
-		"categoryId": "T001",
+		"categoryId": "TAB001",
 		"categoryName": "iPad Air2"
 	}, {
-		"categoryId": "T002",
+		"categoryId": "TAB002",
 		"categoryName": "ipadMini 4"
 	}, {
-		"categoryId": "L001",
+		"categoryId": "LT001",
 		"categoryName": "Macbook Pro"
 	}, {
-		"categoryId": "L002",
+		"categoryId": "LT002",
 		"categoryName": "Inspiron15R"
 	}],
 	"brandsDetails": [{
@@ -162,26 +162,26 @@
 			"purchaseId": "P0005",
 			"productName": "iPhone 7",
 			"quantity": "4",
-			"buyerName": "abc1",
-			"price": "120000"
+			"buyerName": "xyz1",
+			"price": "240000"
 		}, {
 			"purchaseId": "P0006",
 			"productName": "iPhone 7",
 			"quantity": "1",
-			"buyerName": "abc2",
-			"price": "30000"
+			"buyerName": "xyz2",
+			"price": "60000"
 		}, {
 			"purchaseId": "P0007",
 			"productName": "iPhone 7",
 			"quantity": "2",
-			"buyerName": "abc3",
-			"price": "60000"
+			"buyerName": "xyz3",
+			"price": "120000"
 		}, {
 			"purchaseId": "P0008",
 			"productName": "iPhone 7",
 			"quantity": "1",
-			"buyerName": "abc4",
-			"price": "30000"
+			"buyerName": "xyz4",
+			"price": "60000"
 		}]
 	}, {
 		"productId": "M002",
@@ -191,25 +191,25 @@
 			"productName": "iPhone 7+",
 			"quantity": "4",
 			"buyerName": "abc1",
-			"price": "120000"
+			"price": "320000"
 		}, {
 			"purchaseId": "P0010",
 			"productName": "iPhone 7+",
 			"quantity": "1",
 			"buyerName": "abc2",
-			"price": "30000"
+			"price": "80000"
 		}, {
 			"purchaseId": "P0011",
 			"productName": "iPhone 7+",
 			"quantity": "2",
 			"buyerName": "abc3",
-			"price": "60000"
+			"price": "160000"
 		}, {
 			"purchaseId": "P0012",
 			"productName": "iPhone 7+",
 			"quantity": "1",
 			"buyerName": "abc4",
-			"price": "30000"
+			"price": "80000"
 		}]
 	}, {
 		"productId": "M003",
@@ -219,25 +219,25 @@
 			"productName": "Pixel",
 			"quantity": "1",
 			"buyerName": "abc1",
-			"price": "120000"
+			"price": "65000"
 		}, {
 			"purchaseId": "P0014",
 			"productName": "Pixel",
 			"quantity": "1",
 			"buyerName": "abc2",
-			"price": "30000"
+			"price": "65000"
 		}, {
 			"purchaseId": "P0015",
 			"productName": "Pixel",
 			"quantity": "2",
 			"buyerName": "abc3",
-			"price": "60000"
+			"price": "130000"
 		}, {
 			"purchaseId": "P0016",
 			"productName": "Pixel",
 			"quantity": "1",
 			"buyerName": "abc4",
-			"price": "30000"
+			"price": "65000"
 		}]
 	}, {
 		"productId": "T001",
@@ -245,27 +245,27 @@
 		"details": [{
 			"purchaseId": "P0017",
 			"productName": "iPad Air2",
-			"quantity": "1",
+			"quantity": "3",
 			"buyerName": "abc1",
-			"price": "120000"
+			"price": "150000"
 		}, {
 			"purchaseId": "P0018",
 			"productName": "iPad Air2",
 			"quantity": "1",
 			"buyerName": "abc2",
-			"price": "30000"
+			"price": "50000"
 		}, {
 			"purchaseId": "P0019",
 			"productName": "iPad Air2",
 			"quantity": "2",
 			"buyerName": "abc3",
-			"price": "60000"
+			"price": "100000"
 		}, {
 			"purchaseId": "P0020",
 			"productName": "iPad Air2",
 			"quantity": "1",
 			"buyerName": "abc4",
-			"price": "30000"
+			"price": "50000"
 		}]
 	}, {
 		"productId": "T002",
@@ -275,25 +275,25 @@
 			"productName": "ipadMini 4",
 			"quantity": "4",
 			"buyerName": "abc1",
-			"price": "120000"
+			"price": "128000"
 		}, {
 			"purchaseId": "P0022",
 			"productName": "ipadMini 4",
 			"quantity": "1",
 			"buyerName": "abc2",
-			"price": "30000"
+			"price": "32000"
 		}, {
 			"purchaseId": "P0023",
 			"productName": "ipadMini 4",
 			"quantity": "2",
 			"buyerName": "abc3",
-			"price": "60000"
+			"price": "64000"
 		}, {
 			"purchaseId": "P0024",
 			"productName": "ipadMini 4",
 			"quantity": "1",
 			"buyerName": "abc4",
-			"price": "30000"
+			"price": "32000"
 		}]
 	}, {
 		"productId": "L001",
@@ -303,25 +303,25 @@
 			"productName": "Macbook Pro",
 			"quantity": "4",
 			"buyerName": "abc1",
-			"price": "120000"
+			"price": "440000"
 		}, {
 			"purchaseId": "P0026",
 			"productName": "Macbook Pro",
 			"quantity": "1",
 			"buyerName": "abc2",
-			"price": "30000"
+			"price": "110000"
 		}, {
 			"purchaseId": "P0027",
 			"productName": "Macbook Pro",
 			"quantity": "2",
 			"buyerName": "abc3",
-			"price": "60000"
+			"price": "2200000"
 		}, {
 			"purchaseId": "P0028",
 			"productName": "Macbook Pro",
 			"quantity": "1",
 			"buyerName": "abc4",
-			"price": "30000"
+			"price": "110000"
 		}]
 	}, {
 		"productId": "L002",
@@ -331,25 +331,25 @@
 			"productName": "Inspiron15R",
 			"quantity": "4",
 			"buyerName": "abc1",
-			"price": "120000"
+			"price": "220000"
 		}, {
 			"purchaseId": "P0030",
 			"productName": "Inspiron15R",
 			"quantity": "1",
 			"buyerName": "abc2",
-			"price": "30000"
+			"price": "55000"
 		}, {
 			"purchaseId": "P0031",
 			"productName": "Inspiron15R",
 			"quantity": "2",
 			"buyerName": "abc3",
-			"price": "60000"
+			"price": "110000"
 		}, {
 			"purchaseId": "P0032",
 			"productName": "Inspiron15R",
 			"quantity": "1",
 			"buyerName": "abc4",
-			"price": "30000"
+			"price": "55000"
 		}]
 	}]
 }
