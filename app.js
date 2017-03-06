@@ -32,7 +32,8 @@ var app = angular.module('myApp', ['controllers', 'ngRoute','factories']);
                 return $http.get('http://localhost:3000/db');
             }
             dataFactory.postData = function(data){
-                return $http.post('http://localhost:3000/newpurchase',data);
+                var url = 'http://localhost:3000/purchaseDetails';
+                return $http.post(url,data);
             }
             return dataFactory;
         });
@@ -73,11 +74,27 @@ var app = angular.module('myApp', ['controllers', 'ngRoute','factories']);
                                            }, function(e){
                                             console.log(e);
                                            });
-            /*$scope.newPurchase.price = function(){
-                quantity * $scope.purchase.recentpurchases[].price
-            }*/
+            $scope.purchasePriceDetails = function(){
+                var purchaseDetails = $scope.purchase.recentpurchases;
+                for(var i=0;i<purchaseDetails.length-1;i++){
+                    if(purchaseDetails[i].productName == $scope.newPurchase.productName){
+                        console.log(purchaseDetails[i].productId);
+                        $scope.newPurchase.price = $scope.newPurchase.quantity * purchaseDetails[i].price;
+                        console.log($scope.newPurchase.price);
+                    }
+                }
+            }
             $scope.submit = function(){
-                var newdata = $scope.newPurchase;
+                var purchaseDetails = $scope.purchase.recentpurchases;
+                for(var i=0;i<purchaseDetails.length-1;i++){
+                    if(purchaseDetails[i].productName == $scope.newPurchase.productName){
+                        purchaseDetails[i].details.push($scope.newPurchase)
+                        console.log(purchaseDetails[i].details);
+
+                    }
+                }
+
+                var newdata = purchaseDetails;
                 dataFactory.postData(newdata).then(function(response){
                                            $scope.successPost = response;
                                           console.log($scope.successPost);
