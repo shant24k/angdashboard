@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['controllers', 'ngRoute','factories']);
+var app = angular.module('myApp', ['controllers', 'ngRoute','ngResource', 'factories']);
         app.config(['$routeProvider', function ($routeProvider) {
             $routeProvider.when('/pms/:box', {
                 controller: 'pmBox',
@@ -26,14 +26,15 @@ var app = angular.module('myApp', ['controllers', 'ngRoute','factories']);
             });
         }]);
         var factories = angular.module('factories', []);
-        factories.factory('dataFactory',function($http){
+        factories.factory('dataFactory',function($http,$resource){
             var dataFactory={};
             dataFactory.getData = function(){
                 return $http.get('http://localhost:3000/db');
             }
             dataFactory.postData = function(data){
-                var url = 'http://localhost:3000/purchaseDetails';
-                return $http.post(url,data);
+                var baseURL = 'http://localhost:3000/';
+                //return $http.put(url,data);
+                return $resource(baseURL+"purchaseDetails/:id",null,  {'update':{method:'PUT' }});
             }
             return dataFactory;
         });
@@ -90,17 +91,13 @@ var app = angular.module('myApp', ['controllers', 'ngRoute','factories']);
                     if(purchaseDetails[i].productName == $scope.newPurchase.productName){
                         purchaseDetails[i].details.push($scope.newPurchase)
                         console.log(purchaseDetails[i].details);
-
+                        $scope.updateId = purchaseDetails[i].id;
                     }
                 }
 
-                var newdata = purchaseDetails;
-                dataFactory.postData(newdata).then(function(response){
-                                           $scope.successPost = response;
-                                          console.log($scope.successPost);
-                                           }, function(e){
-                                            console.log(e);
-                                           });
+                var updateId = $scope.updateId;
+                var newdata = purchaseDetails[updateId-1];
+                dataFactory.postData().update({id:$scope.updateId},newdata);
             }
 
         }]);
