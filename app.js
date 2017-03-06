@@ -75,6 +75,8 @@ var app = angular.module('myApp', ['controllers', 'ngRoute','ngResource', 'facto
                                            }, function(e){
                                             console.log(e);
                                            });
+
+            // To create price for total quantity of devices t be ordered
             $scope.purchasePriceDetails = function(){
                 var purchaseDetails = $scope.purchase.recentpurchases;
                 for(var i=0;i<purchaseDetails.length-1;i++){
@@ -82,6 +84,20 @@ var app = angular.module('myApp', ['controllers', 'ngRoute','ngResource', 'facto
                         console.log(purchaseDetails[i].productId);
                         $scope.newPurchase.price = $scope.newPurchase.quantity * purchaseDetails[i].price;
                         console.log($scope.newPurchase.price);
+                    }
+                }
+            }
+            // To create purchase Id dynamically during filling form
+            $scope.purchaseIdDetails = function(){
+                var purchaseDetails = $scope.purchase.recentpurchases;
+                for(var i=0;i<purchaseDetails.length-1;i++){
+                    if(purchaseDetails[i].productName == $scope.newPurchase.productName){
+                        var detailsLength = purchaseDetails[i].details.length;
+                        var lastPurchaseId = purchaseDetails[i].details[detailsLength-1].purchaseId;
+                        var newItem = parseInt(lastPurchaseId.substring(4))+1;
+                        var newPurchaseId = lastPurchaseId.substring(0,4)+newItem;
+                        $scope.newPurchase.purchaseId = newPurchaseId;
+                        console.log($scope.newPurchase.purchaseId);
                     }
                 }
             }
