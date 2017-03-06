@@ -98,6 +98,7 @@ var app = angular.module('myApp', ['controllers', 'ngRoute','ngResource', 'facto
                 var updateId = $scope.updateId;
                 var newdata = purchaseDetails[updateId-1];
                 dataFactory.postData().update({id:$scope.updateId},newdata);
+                $scope.newPurchase = {purchaseId:null,productName:null,quantity:null,buyerName:null};
             }
 
         }]);
