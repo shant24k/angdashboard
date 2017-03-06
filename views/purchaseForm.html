@@ -21,7 +21,7 @@
               <div class="form-group">
                 <label class="control-label col-sm-2" for="product-name">Product Name:</label>
                 <div class="col-sm-10"> 
-                  <select class="form-control" id="product-name" ng-model="newPurchase.productName" ng-change="purchaseIdDetails()" required>
+                  <select class="form-control" id="product-name" ng-model="newPurchase.productName" ng-change="purchaseIdDetails();purchasePriceDetails();" required>
                     <option>OnePlus3</option>
                     <option>iPhone 7</option>
                     <option>iPhone 7+</option>

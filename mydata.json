@@ -441,21 +441,21 @@
           "price": "220000"
         },
         {
-          "purchaseId": "L002101",
+          "purchaseId": "L002102",
           "productName": "Inspiron15R",
           "quantity": "1",
           "buyerName": "abc2",
           "price": "55000"
         },
         {
-          "purchaseId": "L002101",
+          "purchaseId": "L002103",
           "productName": "Inspiron15R",
           "quantity": "2",
           "buyerName": "abc3",
           "price": "110000"
         },
         {
-          "purchaseId": "L002101",
+          "purchaseId": "L002104",
           "productName": "Inspiron15R",
           "quantity": "1",
           "buyerName": "abc4",

@@ -79,18 +79,20 @@ var app = angular.module('myApp', ['controllers', 'ngRoute','ngResource', 'facto
             // To create price for total quantity of devices t be ordered
             $scope.purchasePriceDetails = function(){
                 var purchaseDetails = $scope.purchase.recentpurchases;
-                for(var i=0;i<purchaseDetails.length-1;i++){
+                for(var i=0;i<=purchaseDetails.length-1;i++){
                     if(purchaseDetails[i].productName == $scope.newPurchase.productName){
                         console.log(purchaseDetails[i].productId);
-                        $scope.newPurchase.price = $scope.newPurchase.quantity * purchaseDetails[i].price;
-                        console.log($scope.newPurchase.price);
+                        if($scope.newPurchase.quantity){
+                            $scope.newPurchase.price = $scope.newPurchase.quantity * purchaseDetails[i].price;
+                            console.log($scope.newPurchase.price);
+                        }
                     }
                 }
             }
             // To create purchase Id dynamically during filling form
             $scope.purchaseIdDetails = function(){
                 var purchaseDetails = $scope.purchase.recentpurchases;
-                for(var i=0;i<purchaseDetails.length-1;i++){
+                for(var i=0;i<=purchaseDetails.length-1;i++){
                     if(purchaseDetails[i].productName == $scope.newPurchase.productName){
                         var detailsLength = purchaseDetails[i].details.length;
                         var lastPurchaseId = purchaseDetails[i].details[detailsLength-1].purchaseId;
@@ -103,7 +105,7 @@ var app = angular.module('myApp', ['controllers', 'ngRoute','ngResource', 'facto
             }
             $scope.submit = function(){
                 var purchaseDetails = $scope.purchase.recentpurchases;
-                for(var i=0;i<purchaseDetails.length-1;i++){
+                for(var i=0;i<=purchaseDetails.length-1;i++){
                     if(purchaseDetails[i].productName == $scope.newPurchase.productName){
                         purchaseDetails[i].details.push($scope.newPurchase)
                         console.log(purchaseDetails[i].details);
