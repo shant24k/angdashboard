@@ -225,21 +225,21 @@
           "price": "240000"
         },
         {
-          "purchaseId": "M001101",
+          "purchaseId": "M001102",
           "productName": "iPhone 7",
           "quantity": "1",
           "buyerName": "xyz2",
           "price": "60000"
         },
         {
-          "purchaseId": "M001101",
+          "purchaseId": "M001102",
           "productName": "iPhone 7",
           "quantity": "2",
           "buyerName": "xyz3",
           "price": "120000"
         },
         {
-          "purchaseId": "M001101",
+          "purchaseId": "M001104",
           "productName": "iPhone 7",
           "quantity": "1",
           "buyerName": "xyz4",
@@ -369,21 +369,21 @@
           "price": "128000"
         },
         {
-          "purchaseId": "T002101",
+          "purchaseId": "T002102",
           "productName": "ipadMini 4",
           "quantity": "1",
           "buyerName": "abc2",
           "price": "32000"
         },
         {
-          "purchaseId": "T002101",
+          "purchaseId": "T002103",
           "productName": "ipadMini 4",
           "quantity": "2",
           "buyerName": "abc3",
           "price": "64000"
         },
         {
-          "purchaseId": "T002101",
+          "purchaseId": "T002104",
           "productName": "ipadMini 4",
           "quantity": "1",
           "buyerName": "abc4",
